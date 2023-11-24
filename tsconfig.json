@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-      "module": "commonjs",
       "lib": ["ES6","DOM"],
       "target": "ES5",
       "rootDir": "ts",
@@ -11,5 +10,5 @@
       "noFallthroughCasesInSwitch": true,
       "noImplicitAny": true,
   },
-  "include": ["ts/**/*"]
+  "include": ["ts/*"]
 }

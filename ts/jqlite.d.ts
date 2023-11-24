@@ -823,3 +823,14 @@ interface JQueryKeyEventObject extends JQueryInputEventObject {
 
 interface JQueryEventObject extends BaseJQueryEventObject, JQueryCustomEventObject, JQueryInputEventObject, JQueryMouseEventObject, JQueryKeyEventObject {
 }
+
+/**
+ * The interface used to specify the properties parameter in css()
+ */
+// tslint:disable-next-line:class-name
+interface cssPropertySetter {
+    (index: number, value?: string): string | number;
+}
+interface JQLiteCssProperties {
+    [propertyName: string]: string | number | cssPropertySetter;
+}

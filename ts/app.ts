@@ -3,6 +3,9 @@
 
 var ngModule = angular.module('miniApp',[]);
 
+
+// ABAJO HAY DIRECTIVAS PEDORRAS
+
 ngModule.directive('pepe',  () => {
   return {
     restrict: 'E',
